@@ -16,11 +16,7 @@ pipeline {
             }
         }
 
-        stage('SCM') {
-            steps {
-                git changelog: false, poll: false, url: 'https://github.com/SumitKumar121999/tastlast.git'
-            }
-        }
+    
 
         stage('Maven Build') {
             steps {
